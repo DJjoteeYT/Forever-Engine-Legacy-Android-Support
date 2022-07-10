@@ -29,6 +29,8 @@ class ClassHUD extends FlxTypedGroup<FlxBasic>
 	var scoreBar:FlxText;
 	var scoreLast:Float = -1;
 
+	public var botplayTxt:FlxText;
+
 	// fnf mods
 	var scoreDisplay:String = 'beep bop bo skdkdkdbebedeoop brrapadop';
 
@@ -89,6 +91,14 @@ class ClassHUD extends FlxTypedGroup<FlxBasic>
 		// scoreBar.scrollFactor.set();
 		scoreBar.antialiasing = true;
 		add(scoreBar);
+
+		botplayTxt = new FlxText(400, 55, FlxG.width - 800, "BOTPLAY", 32);
+		botplayTxt.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		botplayTxt.scrollFactor.set();
+		botplayTxt.borderSize = 1.25;
+		botplayTxt.visible = Init.trueSettings.get('Botplay');
+		botplayTxt.antialiasing = true;
+		add(botplayTxt);
 
 		cornerMark = new FlxText(0, 0, 0, engineDisplay);
 		cornerMark.setFormat(Paths.font('vcr.ttf'), 18, FlxColor.WHITE);
