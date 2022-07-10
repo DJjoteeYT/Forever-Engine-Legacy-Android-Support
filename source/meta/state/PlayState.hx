@@ -514,7 +514,7 @@ class PlayState extends MusicBeatState
 			FlxG.stage.removeEventListener(KeyboardEvent.KEY_UP, onKeyRelease);
 		}
 
-		if (Init.trueSettings.get('Botplay'))
+		if (Init.trueSettings.get('Botplay')) {
 					boyfriendStrums.autoplay = true;
 		}
 		super.destroy();
