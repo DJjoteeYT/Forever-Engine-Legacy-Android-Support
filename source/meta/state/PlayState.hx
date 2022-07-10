@@ -514,9 +514,6 @@ class PlayState extends MusicBeatState
 			FlxG.stage.removeEventListener(KeyboardEvent.KEY_UP, onKeyRelease);
 		}
 
-		if (Init.trueSettings.get('Botplay')) {
-					boyfriendStrums.autoplay = true;
-		}
 		super.destroy();
 	}
 
@@ -580,8 +577,8 @@ class PlayState extends MusicBeatState
 						Main.switchState(this, new OriginalChartingState());
 				}
 
-				if ((FlxG.keys.justPressed.SIX))
-					boyfriendStrums.autoplay = !boyfriendStrums.autoplay;
+				if (Init.trueSettings.get('Botplay'))
+					boyfriendStrums.autoplay = true;
 			}
 
 			///*
