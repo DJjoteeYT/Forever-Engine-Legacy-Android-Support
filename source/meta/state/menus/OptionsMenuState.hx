@@ -67,6 +67,7 @@ class OptionsMenuState extends MusicBeatState
 					['Downscroll', getFromOption],
 					['Centered Notefield', getFromOption],
 					['Ghost Tapping', getFromOption],
+					['Botplay', getFromOption],
 					['', null],
 					['Text Settings', null],
 					['', null],
@@ -79,7 +80,6 @@ class OptionsMenuState extends MusicBeatState
 					#if !neko ["Framerate Cap", getFromOption], #end
 					['FPS Counter', getFromOption],
 					['Memory Counter', getFromOption],
-					['Botplay', getFromOption],
 					#if !neko ['Debug Info', getFromOption], #end
 
 				]
