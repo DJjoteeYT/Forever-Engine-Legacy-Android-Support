@@ -69,6 +69,12 @@ class Init extends FlxState
 			'Whether to display approximately how much memory is being used.',
 			NOT_FORCED
 		],
+		'Botplay' => [
+			false,
+			Checkmark,
+			'Automatically hits the notes. Displays watermark.',
+			NOT_FORCED
+		],
 		'Debug Info' => [
 			false,
 			Checkmark,
