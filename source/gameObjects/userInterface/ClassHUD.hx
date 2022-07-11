@@ -93,9 +93,8 @@ class ClassHUD extends FlxTypedGroup<FlxBasic>
 		add(scoreBar);
 
 		botplayTxt = new FlxText(400, 55, FlxG.width - 800, "BOTPLAY", 32);
-		botplayTxt.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
-		botplayTxt.scrollFactor.set();
-		botplayTxt.borderSize = 1.25;
+		botplayTxt.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER);
+		botplayTxt.setBorderStyle(OUTLINE, FlxColor.BLACK, 1.5);
 		botplayTxt.visible = Init.trueSettings.get('Botplay');
 		botplayTxt.antialiasing = true;
 		add(botplayTxt);
