@@ -167,7 +167,7 @@ class Strumline extends FlxTypedGroup<FlxBasic>
 			staticArrow.y -= 10;
 			staticArrow.playAnim('static');
 
-			staticArrow.alpha = 0.00001;
+			staticArrow.alpha = 0;
 			FlxTween.tween(staticArrow, {y: staticArrow.initialY, alpha: staticArrow.setAlpha}, 1, {ease: FlxEase.circOut, startDelay: 0.5 + (0.2 * i)});
 
 			if (noteSplashes)

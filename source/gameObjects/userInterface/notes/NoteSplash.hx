@@ -1,4 +1,3 @@
-
 package gameObjects.userInterface.notes;
 
 import meta.data.dependency.FNFSprite;
@@ -23,8 +22,8 @@ class NoteSplash extends FNFSprite
 		if (animation.finished)
 		{
 			// set the splash to invisible
-			if (alpha != 0.00001)
-				alpha = 0.00001;
+			if (visible)
+				visible = false;
 		}
 		//
 	}
