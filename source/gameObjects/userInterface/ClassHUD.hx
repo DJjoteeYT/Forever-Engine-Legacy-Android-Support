@@ -97,7 +97,7 @@ class ClassHUD extends FlxTypedGroup<FlxBasic>
 		cornerMark.setPosition(FlxG.width - (cornerMark.width + 5), 5);
 		cornerMark.antialiasing = true;
 
-		centerMark = new FlxText(0, 0, 0, '- ${infoDisplay + " [" + diffDisplay + if(Init.trueSettings.get('Botplay')) 'BOTPLAY' else ''}] -');
+		centerMark = new FlxText(0, 0, 0, '- ${infoDisplay + " [" + diffDisplay + if(Init.trueSettings.get('Botplay')) ' [BOT]' else ''}] -');
 		centerMark.setFormat(Paths.font('vcr.ttf'), 24, FlxColor.WHITE);
 		centerMark.setBorderStyle(OUTLINE, FlxColor.BLACK, 2);
 		add(centerMark);
