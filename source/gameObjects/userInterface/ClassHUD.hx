@@ -70,10 +70,10 @@ class ClassHUD extends FlxTypedGroup<FlxBasic>
 
 		healthBar = new FlxBar(healthBarBG.x + 4, healthBarBG.y + 4, RIGHT_TO_LEFT, Std.int(healthBarBG.width - 8), Std.int(healthBarBG.height - 8));
 		healthBar.scrollFactor.set();
-switch (infoDisplay)
+		switch (infoDisplay)
 		{
 		case "Test":
-		healthBar.createFilledBar(0xFFFF0000, 0xFF66FF33);
+		healthBar.createFilledBar(0x31B0D1, 0x31B0D1);
 		default:
 		healthBar.createFilledBar(0xFFFF0000, 0xFF66FF33);
 		}
