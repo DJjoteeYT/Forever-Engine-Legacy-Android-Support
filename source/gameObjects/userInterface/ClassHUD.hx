@@ -73,7 +73,7 @@ class ClassHUD extends FlxTypedGroup<FlxBasic>
 		switch (infoDisplay)
 		{
 		case "Test":
-		healthBar.createFilledBar(0xFF31B0D1, 0xFF31B0D1);
+		healthBar.createFilledBar(0xFF7BD6F6, 0xFF31B0D1);
 		default:
 		healthBar.createFilledBar(0xFFFF0000, 0xFF66FF33);
 		}
